@@ -1,4 +1,4 @@
-# 📖 HỆ THỐNG QUẢN LÝ MƯỢN SÁCH (Book Borrowing Management)
+# HỆ THỐNG QUẢN LÝ MƯỢN SÁCH (Book Borrowing Management)
 
 <p>
   <img src="https://img.shields.io/badge/Java-Servlet%20%2B%20JDBC-orange" alt="Java Servlet + JDBC">
@@ -10,13 +10,13 @@
 
 ---
 
-## 📖 Giới thiệu (About)
+## Giới thiệu (About)
 
 Hệ thống cho phép quản lý 3 nghiệp vụ chính: **Độc giả**, **Sách**, và **Phiếu mượn** — trong đó mỗi phiếu mượn ghi nhận độc giả nào mượn sách nào, ngày mượn, trạng thái và ghi chú. Dự án thực hành trực tiếp JDBC (không qua ORM) để hiểu rõ cách thao tác SQL, JOIN dữ liệu và xử lý kết nối cơ sở dữ liệu trong Java web application cổ điển (Servlet).
 
 ---
 
-## 🛠 Công nghệ sử dụng
+## Công nghệ sử dụng
 
 | Thành phần | Công nghệ |
 |---|---|
@@ -27,7 +27,7 @@ Hệ thống cho phép quản lý 3 nghiệp vụ chính: **Độc giả**, **S�
 
 ---
 
-## 🗄 Thiết kế cơ sở dữ liệu
+## Thiết kế cơ sở dữ liệu
 
 ### Bảng `doc_gia`
 
@@ -67,7 +67,7 @@ JOIN doc_gia d ON p.ma_dg = d.ma_dg;
 
 ---
 
-## 📁 Cấu trúc dự án
+## Cấu trúc dự án
 
 ```
 book-borrowing-servlet-jdbc/
@@ -101,18 +101,18 @@ book-borrowing-servlet-jdbc/
 
 ---
 
-## ✨ Chức năng chính
+## Chức năng chính
 
-- 📋 Hiển thị danh sách Độc giả, Sách, Phiếu mượn
-- ➕ Thêm mới Độc giả (`ThemDocGiaServlet`)
-- ➕ Thêm mới Sách (`ThemSachServlet`)
-- ➕ Lập Phiếu mượn mới, tự JOIN hiển thị tên sách + tên độc giả (`ThemPhieuServlet`)
+- Hiển thị danh sách Độc giả, Sách, Phiếu mượn
+- Thêm mới Độc giả (`ThemDocGiaServlet`)
+- Thêm mới Sách (`ThemSachServlet`)
+- Lập Phiếu mượn mới, tự JOIN hiển thị tên sách + tên độc giả (`ThemPhieuServlet`)
 
 > Ghi chú: danh sách trên dựa theo các DAO/Servlet hiện có. Nếu có thêm chức năng sửa/xóa/tìm kiếm, bạn bổ sung vào đây.
 
 ---
 
-## 🚀 Bắt đầu (Getting Started)
+## Bắt đầu (Getting Started)
 
 ### Yêu cầu
 
